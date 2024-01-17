@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.probabilitysim.BullseyeView">
+   <children>
+      <Circle fill="#c3201a" layoutX="419.0" layoutY="235.0" radius="92.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-100.0" endY="157.0" layoutX="165.0" layoutY="184.0" startX="-100.0" startY="-6.0" />
+      <Line endX="-80.5" endY="26.0" layoutX="165.0" layoutY="171.0" startX="-100.0" />
+      <Line endX="-93.5" endY="-30.5" layoutX="158.0" layoutY="201.0" startX="-110.5" startY="-3.0" />
+      <PointLight color="CHARTREUSE" layoutX="149.0" layoutY="84.0" lightOn="true" />
+      <Text layoutX="21.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What is your skill level? " wrappingWidth="200.0" />
+      <TextField layoutX="20.0" layoutY="45.0" />
+      <Button layoutX="202.0" layoutY="111.0" mnemonicParsing="false" text="Calculate" />
+      <Text layoutX="133.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cacluate Prob of winning a game in x throws..." wrappingWidth="231.00537109375" />
+      <Text layoutX="327.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How many Darts do you want to throw?" />
+      <TextField layoutX="339.0" layoutY="45.0" />
+      <Circle fill="WHITE" layoutX="419.0" layoutY="235.0" radius="82.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#bc3419" layoutX="419.0" layoutY="235.0" radius="73.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="419.0" layoutY="235.0" radius="64.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#c62e00" layoutX="419.0" layoutY="235.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="419.0" layoutY="235.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#c93210" layoutX="419.0" layoutY="235.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="419.0" layoutY="235.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#141414" layoutX="419.0" layoutY="235.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-100.0" endY="157.0" layoutX="200.0" layoutY="213.0" startX="-100.0" startY="-6.0" />
+      <Line endX="-80.5" endY="26.0" layoutX="201.0" layoutY="210.0" startX="-100.0" />
+      <Line endX="-93.5" endY="-30.5" layoutX="192.0" layoutY="239.0" startX="-110.5" startY="-3.0" />
+      <Line endX="-100.0" endY="157.0" layoutX="130.0" layoutY="213.0" startX="-100.0" startY="-6.0" />
+      <Line endX="-93.5" endY="-30.5" layoutX="123.0" layoutY="237.0" startX="-110.5" startY="-3.0" />
+      <Line endX="-93.5" endY="16.0" layoutX="141.0" layoutY="214.0" startX="-110.5" startY="-3.0" />
+      <Ellipse fill="#9aa5ae" layoutX="101.0" layoutY="371.0" radiusX="25.0" radiusY="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#9ea7ae" layoutX="66.0" layoutY="352.0" radiusX="25.0" radiusY="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#a2a7ab" layoutX="30.0" layoutY="371.0" radiusX="25.0" radiusY="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="172.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purpose of this game  is to hit a bullseye..." wrappingWidth="128.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="190.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="59.21630859375" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.probabilitysim.LotteryController">
+   <children>
+      <Label layoutX="50.0" layoutY="48.0" prefHeight="44.0" prefWidth="122.0" text="Lottery Card" />
+      <TextField fx:id="numOne" layoutX="13.0" layoutY="140.0" prefHeight="26.0" prefWidth="73.0" />
+      <TextField fx:id="numThree" layoutX="221.0" layoutY="140.0" prefHeight="26.0" prefWidth="73.0" />
+      <TextField fx:id="numTwo" layoutX="118.0" layoutY="140.0" prefHeight="26.0" prefWidth="73.0" />
+      <TextField fx:id="numFour" layoutX="315.0" layoutY="140.0" prefHeight="26.0" prefWidth="73.0" />
+      <TextField fx:id="numSix" layoutX="504.0" layoutY="140.0" prefHeight="26.0" prefWidth="73.0" />
+      <TextField fx:id="numFive" layoutX="403.0" layoutY="140.0" prefHeight="26.0" prefWidth="73.0" />
+      <Label layoutX="33.0" layoutY="212.0" text="Rules:" />
+      <Label layoutX="28.0" layoutY="259.0" text="You must only select 6 numbers between 1 and 40. No two numbers can be the same." />
+      <Label layoutX="27.0" layoutY="286.0" prefHeight="17.0" prefWidth="396.0" text="If all six numbers match those of the winning card and if the numbers " />
+      <Label layoutX="27.0" layoutY="314.0" text=" are the same as those in the winning card, you win." />
+      <Button fx:id="submit" layoutX="464.0" layoutY="343.0" mnemonicParsing="false" onAction="#onClickHandler" text="Submit" />
+      <Label fx:id="win" layoutX="408.0" layoutY="348.0" />
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="450.0" layoutY="32.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Button fx:id="calculate" layoutX="172.0" layoutY="27.0" mnemonicParsing="false" onAction="#probCalc" text="Calculate" />
+      <Label fx:id="output" layoutX="279.0" layoutY="31.0" text="Label" />
+      <Label fx:id="probability" layoutX="33.0" layoutY="31.0" text="Theoretical Probability" />
+   </children>
+</AnchorPane>

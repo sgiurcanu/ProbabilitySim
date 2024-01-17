@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.probabilitysim.DiceComparisonController">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BarChart fx:id="rows" GridPane.columnSpan="2">
+              <xAxis>
+                <CategoryAxis label="Sum Of Face" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="# Of Rows" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button fx:id="rowOne" mnemonicParsing="false" onAction="#rowOnce" text="Row 1 time" GridPane.rowIndex="1" />
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backTouch" text="Back" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Button fx:id="rowTen" mnemonicParsing="false" onAction="#rowTen" text="Row 10 times" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="rowHundred" mnemonicParsing="false" onAction="#rowHundred" text="Row 100 times" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" text="Clear" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <TableView fx:id="storedDice" maxHeight="-Infinity" prefHeight="150.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="numFaces" prefWidth="125.0" text="# Faces" />
+                <TableColumn fx:id="probability" prefWidth="125.0" text="Probability" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

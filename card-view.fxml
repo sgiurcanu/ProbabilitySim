@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.probabilitysim.CardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="230.0" layoutX="167.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+      <Text fx:id="percentage" layoutX="200.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="200.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Text>
+      <Button fx:id="newButton" layoutX="198.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#newClick" text="New Calculation">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="501.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#backClick" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ToolBar prefHeight="40.0" prefWidth="600.0">
+        <items>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Card Probability Calculation " wrappingWidth="437.35400390625">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+          <Button fx:id="currentDeckView" mnemonicParsing="false" onAction="#deckViewClick" text="View Current Deck" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

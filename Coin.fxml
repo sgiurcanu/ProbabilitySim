@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.probabilitysim.CoinToss">
+   <children>
+      <Circle fill="#505e6b" layoutX="406.0" layoutY="104.0" radius="82.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#c3c3c3" layoutX="395.0" layoutY="104.0" radius="82.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="388.0" layoutY="242.0" mnemonicParsing="false" text="Flip" />
+   </children>
+</AnchorPane>
